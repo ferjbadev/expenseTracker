@@ -33,8 +33,8 @@ const ExpenseForm = ({ onAddExpense }: ExpenseFormProps) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-6 mb-6">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4">Add New Expense</h2>
+    <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-4 md:p-6 mb-6">
+      <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4 text-center md:text-left">Add New Expense</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
@@ -102,12 +102,14 @@ const ExpenseForm = ({ onAddExpense }: ExpenseFormProps) => {
         </div>
       </div>
 
-      <button
-        type="submit"
-        className="mt-6 w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-md hover:shadow-lg"
-      >
-        Add Expense
-      </button>
+      <div className="mt-6 flex justify-center">
+        <button
+          type="submit"
+          className="bg-blue-600 text-white py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-md hover:shadow-lg"
+        >
+          Add Expense
+        </button>
+      </div>
     </form>
   );
 };
