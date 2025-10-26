@@ -34,7 +34,7 @@ const ExpenseForm = ({ onAddExpense }: ExpenseFormProps) => {
 
   return (
     <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-4 md:p-6 mb-6">
-      <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4 text-center md:text-left">Add New Expense</h2>
+      <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4 text-center">Add New Expense</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
